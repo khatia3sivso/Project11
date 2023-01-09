@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.elipse{
+    width: 27px;
+    height: 27px;
+    /* UI Properties */
+    border: 8px solid var(--unnamed-color-000000);
+    border: 8px solid #000000;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.header-wrapper ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-wrapper li{
+    margin: 15px;
+    font: normal normal bold 12px/18px Brandon Grotesque;
+    letter-spacing: 1.2px;
+    color: #000000;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    
+}
+.header-wrapper li::after {
+    content: "";
+    height: 20px;
+    width: 1px;
+    margin-left: 20px;
+    background-color: black;
+}
+.header-wrapper li:last-child:after {
+    display: none;
+}
+.burger{
+    display: none;
+}
+.burger span {
+    width: 40px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: black;
+  }
+@media(max-width:375px){
+    .burger{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav{
+        display: none;
+    }
+}
+
+.night-sky-image{
+    width: 100%;
+    height: auto;
+}
